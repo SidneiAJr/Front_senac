@@ -6,7 +6,6 @@ body{
     text-align: center;
     border: 0px;
     background-color:#0844c5;
-    border: 20px;
     border-radius: 2;
     border-top: 2;
     border-left: 2;
@@ -14,12 +13,11 @@ body{
     text-decoration: dotted;
     text-transform:uppercase;
     text-wrap: 10px;
-    border-radius: 20px;
-    border-width: 20px;
-    border-left: 50px;
+    border-radius: 10px;
+    border-width: 10px;
+    border-left: 10px;
     border-style:ridge;
     text-overflow: inherit;
-    text-shadow: 50px;
     text-decoration-color: black;
     position: absolute;
     left: 35%;
@@ -39,7 +37,6 @@ input{
 width: 95%;
 padding: 10px;
 margin-bottom: 9px;
-border: 5px solid #ddd;
 border-radius: 5px;
 }
 select{
