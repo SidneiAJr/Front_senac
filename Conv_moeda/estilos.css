@@ -9,14 +9,9 @@ body{
     border-radius: 2;
     border-top: 2;
     border-left: 2;
-    border-color: black;
     text-decoration: dotted;
     text-transform:uppercase;
     text-wrap: 10px;
-    border-radius: 10px;
-    border-width: 10px;
-    border-left: 10px;
-    border-style:ridge;
     text-overflow: inherit;
     text-decoration-color: black;
     position: absolute;
