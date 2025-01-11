@@ -15,7 +15,7 @@ function receb(){
         document.getElementById("res4").innerHTML = `Salario Bruto R$:${salbruto}`  
         document.getElementById("res1").innerHTML = `Valor por Hora R$:${res.toFixed(2)}` 
         document.getElementById("res2").innerHTML = `FGTS R$:${fgts.toFixed(2)}`  
-        document.getElementById("res3").innerHTML = `Descontos R$:${desc.toFixed(2)}`  
+        document.getElementById("res3").innerHTML = `Descontos do salario R$:${desc.toFixed(2)}`  
         document.getElementById("res5").innerHTML = `Total de Horas:${tempotrampo}`  
         
     }else{
