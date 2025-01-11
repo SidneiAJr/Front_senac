@@ -18,11 +18,11 @@ body {
 .container {
     width: 420px;
     background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
+    border: 2px solid rgba(7, 0, 0, 0.2);
     border-radius: 10px;
     color: white;
     padding: 30px 40px;
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(200px);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -53,9 +53,9 @@ button {
     cursor: pointer;
     margin-top: 1rem;
     display: inline-block;
-    border-color: red;
     border: 2px;
     border-radius: 20px;
+    font-weight: bold;
 }
 
 .button:hover {
@@ -74,6 +74,18 @@ button {
 #resultado {
     margin-top: 20px;
     font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Poppins", serif;
     font-style: oblique;
+}
+.res1 , .res2 , .res3 ,  .res5{
+    font-size: 20px;
+    font-family: "Poppins", serif;
+    color: black;
+    font-weight: bold;
+}
+.res4 {
+    font-size: 20px;
+    font-family: "Poppins", serif;
+    color: red;
+    font-weight: bold;
 }
