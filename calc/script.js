@@ -9,7 +9,7 @@ function receb(){
         const fgts = valor*0.08
         const alm = valor*0.01
         const trans = valor*0.08
-        const desc = valor - trans - alm 
+        const desc = trans - alm - 80
         const salbruto = valor
 
         document.getElementById("res4").innerHTML = `Salario Bruto R$:${salbruto}`  
