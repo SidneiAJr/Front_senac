@@ -1,4 +1,4 @@
-const key = ""
+const key = "" //Tem que colocar a chave da API, aqui não faz diferença porque usei gerador de email.
 
 function btn() {
     const input = document.querySelector(".caixa-info").value
