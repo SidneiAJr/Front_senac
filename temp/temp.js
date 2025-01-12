@@ -1,4 +1,4 @@
-const key = "791b1148e9425c3b21d9d4e51060c0d2"
+const key = ""
 
 function btn() {
     const input = document.querySelector(".caixa-info").value
