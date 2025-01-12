@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://fastly.picsum.photos/id/788/1920/1089.jpg?hmac=n8jpeubSmaZaDz-dPdhSwQ80nfGxwE7YDi04q2ghjnM");
+}
+
+.caixa-maior {
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 25px;
+    padding: 20px;
+    backdrop-filter: blur(100px);
+    width: 95%;
+    max-width: 450px;
+}
+
+.caixa-info {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: #7c7c7c;
+    color: white;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: #7c7c7c;
+    color: white;
+    font-weight: bold;
+}
+.btn:hover {
+    color: red;
+}
+
+.titulo {
+    font-size: 29px;
+    color: grey;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.subti {
+    font-size: 25px;
+    color: grey;
+}
+.subti2 {
+    font-size: 25px;
+    color: grey;
+}
+.umid{
+    font-size: 25px;
+    color: grey; 
+}
+.clima{
+    font-size: 25px;
+    color: grey; 
+    text-transform: capitalize;
+} 
+.clima img{
+    height: 50px;
+    width: 50px;
+}
