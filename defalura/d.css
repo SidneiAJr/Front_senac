@@ -4,15 +4,21 @@
     box-sizing: border-box;
     font-family: "Roboto", serif;
 }
+body{
+    background-color:rgba(17, 7, 12, 0.8);
+}
+
 .main{
+    backdrop-filter: blur(100px);
+    background-color: transparent;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-color: rgba(48, 13, 13, 0.83);
     height: 70vh;
     width: 100vw;
     text-shadow: -3px -5px 6px #920000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .main h5{
     font-size: 80px;
@@ -87,7 +93,14 @@
     font-weight: bold;
     background-color: black;
     font-size: 41px;
-    
+}
+#sd{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
 }
 footer{
     display: flex;
