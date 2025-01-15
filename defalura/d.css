@@ -5,11 +5,10 @@
     font-family: "Roboto", serif;
 }
 body{
-    background-color:rgba(17, 7, 12, 0.8);
+    background-image: url("https://fastly.picsum.photos/id/788/1920/1089.jpg?hmac=n8jpeubSmaZaDz-dPdhSwQ80nfGxwE7YDi04q2ghjnM");
 }
 
 .main{
-    backdrop-filter: blur(100px);
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -18,11 +17,11 @@ body{
     height: 70vh;
     width: 100vw;
     text-shadow: -3px -5px 6px #920000;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .main h5{
     font-size: 80px;
     font-weight: bold;
+    color: green;
 }
 .main img{
     width: 400px;
@@ -33,8 +32,7 @@ body{
     align-items: center;
     text-align: center;
     justify-content: center;
-    color: red;
-    background-color: black;
+    color: green;
     font-size: 50px;
     height: 20vh;
 }
@@ -75,13 +73,6 @@ body{
     font-size: 50px;
     color: white;
     outline: none;
-}
-#amigo{
-    font-size: 20px;
-    font-weight: bold;
-    color: red;
-    display: flex;
-    align-items: center;
 }
 #amigo{
     display: flex;
