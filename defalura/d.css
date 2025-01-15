@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+.main{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(48, 13, 13, 0.83);
+    height: 70vh;
+    width: 100vw;
+    text-shadow: -3px -5px 6px #920000;
+}
+.main h5{
+    font-size: 80px;
+    font-weight: bold;
+}
+.main img{
+    width: 400px;
+    height: 400px;
+}
+.fr{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: red;
+    background-color: black;
+    font-size: 50px;
+    height: 20vh;
+}
+
+.bt{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+}
+.btn{
+    border-radius: 15px;
+    color: gray;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    font-weight: bold;
+    border: 2px grey;
+}
+.btn:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+.fr input{
+    border: none;
+    border-radius: 30px;
+    font-size: 40px;
+    outline: none;
+}
+.h{
+    font-size: 95px;
+    color: white;
+}
+.e{
+    font-size: 50px;
+    color: white;
+    outline: none;
+}
+#amigo{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    display: flex;
+    align-items: center;
+}
+#amigo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    background-color: black;
+    font-size: 41px;
+    
+}
+footer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+    background-color: black;
+}
