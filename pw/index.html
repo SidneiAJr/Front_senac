@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gera.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Gerador de Senha</title>
+</head>
+
+<body>
+    <div class="caixa-maior">
+        <h1><span class="r">Gerador</span><span class="b">de</span>senha</h1>
+        <p>Gerador de senha Aleatorio</p>
+        <input type="text" name="password" id="password">
+        <input type="range" name="password-lenght" id="password-lenght" value="16" min="4" max="64">
+        <button id="copy">Copiar senha</button>
+    </div>
+    
+    <script>
+        const input = document.querySelector("#password")
+        let passwordlenght = 16
+        function gera() {
+            const chars = "abcfgholkjhabcghdASDFGHJUJKL123456789%&*(.;>{[**-_"
+            let password = ""
+
+            for (let i = 0; i < passwordlenght; i++) {
+                const random = Math.floor(Math.random() * chars.length)
+                password += chars.substring(random, random + 1)
+            }
+            input.value = password
+        }
+
+        function copy(){
+            navigator.clipboard.writeText(input.value)
+        }
+        const passwordLenghtEl = document.querySelector("#password-lenght")
+        passwordLenghtEl.addEventListener("input", function () {
+            passwordlenght = passwordLenghtEl.value
+            gera()
+        })
+        gera()
+        const copybtn = document.querySelector("#copy")
+        copybtn.addEventListener('click',copy )
+    </script>
+</body>
+
+</html>
