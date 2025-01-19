@@ -12,3 +12,4 @@ function reb(){
     }
     document.getElementById("res1").innerHTML = "Por Favor insira um valor valido"
     }
+.
