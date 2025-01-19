@@ -10,6 +10,5 @@ function reb(){
     }else{
         document.getElementById("res1").innerHTML = "Favor Inserir o valor correto" 
     }
-    document.getElementById("res1").innerHTML = "Por Favor insira um valor valido"
+        document.getElementById("res1").innerHTML = "Por Favor insira um valor valido"
     }
-.
