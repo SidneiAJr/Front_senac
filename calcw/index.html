@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="g.css">
+    <script src="log.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+         <h3>Consumo de Watts(W)</h3>
+         <p>Potencia do equipamento em (W)</p>
+         <input type="number" name="cons" id="w" placeholder="Potencia em W">
+         <p>Tempo Usado</p>
+         <input type="number" name="tempo" id="t" placeholder="Tempo Ligado diario">
+         <button onclick="calc()">Calcular</button>
+         <div id="res"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
