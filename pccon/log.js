@@ -8,12 +8,12 @@ function calc() {
 
     const calctotal = w + v + s + hd + p;
     const calcpico = calctotal * 0.30;
-    const calc = fonte - calctotal;
+    const reb = calctotal + calpico
 
     if (!isNaN(w) && !isNaN(v) && !isNaN(s) && !isNaN(hd) && !isNaN(p) && !isNaN(fonte)) {
         document.getElementById("res").innerHTML = `O Total de consumo em W: ${calctotal.toFixed(2)}`;
         document.getElementById("res2").innerHTML = `Calculo com potencia de pico de 30%: ${calcpico.toFixed(2)}`;
-        document.getElementById("res3").innerHTML = `A sobra de energia será W: ${calc.toFixed(2)}`;
+        document.getElementById("res3").innerHTML = `Potencia recomendada em W: ${reb.toFixed(2)}`;
 
         // Gera o gráfico
         const ctx = document.getElementById('myChart').getContext('2d');
