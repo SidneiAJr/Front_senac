@@ -101,17 +101,17 @@ button:focus {
 /* Estilo para o resultado em negrito */
 #ir {
     font-weight: bold;
-    color:black;
+    color:grey;
     font-size: 30px;
 }
 #vf{
     font-weight: bold;
-    color: black;
+     color:grey;
     font-size: 30px;
 }
 #liq{
     font-weight: bold;
-    color: red;
+     color:grey;
     font-size: 30px;
 }
 #tipoInvestimento{
