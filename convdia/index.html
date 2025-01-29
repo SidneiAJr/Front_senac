@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="v.css"/>
+    <script src="a.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js" integrity="sha512-MpDFIChbcXl2QgipQrt1VcPHMldRILetapBl5MPCA9Y8r7qvlwx1/Mc9hNTzY+kS5kX6PdoDq41ws1HiVNLdZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Formulário -->
+        <div class="form-container">
+            <h2>Bem-vindo!</h2>
+            <h5>Conversor de Anos</h5>
+            <div class="input-container">
+                <input type="number" id="ano" placeholder="Digite os Ano">
+                <button id="botao" onclick="conv()">Calcular</button>
+                <div id="res1"></div>
+                <div id="res2"></div>
+                <div id="res3"></div>
+            </div>
+        </div>
+</body>
+</html>
