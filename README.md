@@ -24,4 +24,4 @@
 
 Os projetos estão organizados em pastas específicas, cada uma contendo a descrição do projeto, instruções de instalação e como utilizá-lo.
 
-## Meus projetos estão sobre minha autoria caso queiram é entrar em contato, Agradecido!!
+
