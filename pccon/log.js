@@ -8,7 +8,7 @@ function calc() {
 
     const calctotal = w + v + s + hd + p;
     const calcpico = calctotal * 0.30;
-    const reb = calctotal + calpico
+    const reb = calctotal + calcpico
 
     if (!isNaN(w) && !isNaN(v) && !isNaN(s) && !isNaN(hd) && !isNaN(p) && !isNaN(fonte)) {
         document.getElementById("res").innerHTML = `O Total de consumo em W: ${calctotal.toFixed(2)}`;
