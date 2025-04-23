@@ -10,7 +10,6 @@
 - Conversor de Temperatura de C° para F e k
 - Calculadora
 - Consumo em Watt, custo do watt 0,72RS
-- Calculadora de Renda fixa
 - Conversor de Binario para Texto
 - Quantidade de Maquinas no IP
 - Conversor de Dia para Meses e Anos e horas
