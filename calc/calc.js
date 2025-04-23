@@ -4,7 +4,7 @@ function receb(){
     const tempo = document.getElementById("horastrab").value
 
     if(valor&& !isNaN(valor)||tempo&& !isNaN(tempo)){
-        const tempotrampo = tempo*30
+        const tempotrampo = tempo*26
         const res = valor/tempotrampo
         const fgts = valor*0.08
         const trans = valor*0.08
