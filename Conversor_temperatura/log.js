@@ -1,5 +1,5 @@
 function calc(){
-    const c = parseFloat(document.getElementById("temp").value)
+    const c = Number(document.getElementById("temp").value)
     const k = 273
     const calcK = k+c
     const calcF = (c*9/5)+32
