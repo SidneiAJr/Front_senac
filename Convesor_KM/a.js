@@ -1,5 +1,5 @@
 function conv(){
-   const ha = document.getElementById("ha").value
+   const ha = Number(document.getElementById("ha").value)
    const km = ha/100
    const m = ha *10000
    const cm = ha * 1000000000
