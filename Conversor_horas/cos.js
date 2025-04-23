@@ -1,5 +1,5 @@
 function conv(){
-    const n = document.getElementById("min").value
+    const n = Number(document.getElementById("min").value)
     const res = n*60
     const seg = n*3600
     if(!isNaN(n)){
