@@ -1,8 +1,8 @@
 function receb() {
-    const valor = document.getElementById("valorIni").value;
-    const juros = document.getElementById("juros").value;
-    const tempo = document.getElementById("tempo").value;
-    const tipoInvestimento = document.getElementById("tipoInvestimento").value; // Captura o tipo de investimento
+    const valor = Number(document.getElementById("valorIni").value);
+    const juros = Number(document.getElementById("juros").value);
+    const tempo = Number(document.getElementById("tempo").value);
+    const tipoInvestimento = Number(document.getElementById("tipoInvestimento").value); // Captura o tipo de investimento
 
     if (valor && !isNaN(valor) && tempo && !isNaN(tempo)) {
 
