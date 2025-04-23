@@ -1,8 +1,7 @@
 function receb(){
-    const valor = document.getElementById("salario").value
-    const tempo = document.getElementById("horastrab").value
-    const diassemana = document.getElementById("diassemana").value
-
+   const valor = Number(document.getElementById("salario").value); // Convertendo para número
+    const tempo = Number(document.getElementById("horastrab").value); // Convertendo para número
+    const diassemana = Number(document.getElementById("diassemana").value); // Convertendo para número
     // Verifica se os valores são números válidos e maiores que zero
     if (valor && !isNaN(valor) && valor > 0 && tempo && !isNaN(tempo) && tempo > 0 && diassemana && !isNaN(diassemana) && diassemana > 0) {
         const tempotrampo = tempo * diassemana
