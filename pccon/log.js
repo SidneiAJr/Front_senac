@@ -13,7 +13,7 @@ function calc() {
     if (!isNaN(w) && !isNaN(v) && !isNaN(s) && !isNaN(hd) && !isNaN(p) && !isNaN(fonte)) {
         document.getElementById("res").innerHTML = `O Total de consumo em W: ${calctotal.toFixed(2)}`;
         document.getElementById("res2").innerHTML = `Calculo com potencia de pico de 30%: ${calcpico.toFixed(2)}`;
-        document.getElementById("res3").innerHTML = `Potencia recomendada em W: ${reb.toFixed(2)}`;
+        document.getElementById("res3").innerHTML = `Potencia da fonte necessaria em W: ${reb.toFixed(2)}`;
 
         // Gera o gráfico
         const ctx = document.getElementById('myChart').getContext('2d');
