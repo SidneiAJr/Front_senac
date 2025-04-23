@@ -1,5 +1,5 @@
 function conv(){
-   const anos = document.getElementById("ano").value
+   const anos = Number(document.getElementById("ano").value)
    
    if(!isNaN(anos)&&anos>0){
    const ano = anos*365
