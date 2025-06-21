@@ -6,7 +6,7 @@
     outline: none;
 }
 body{
-    background: url("./img/riosins.jpg");
+    background: url(./img/b.jpg);
     
     background-size: cover;
 }
@@ -20,7 +20,7 @@ body{
     font-size: 20px;
     font-weight: bold;
     text-transform: capitalize;
-    backdrop-filter: blur(200px);
+    backdrop-filter: blur(35px);
     border-radius: 15px;
     position: absolute;
     top: 50%;
