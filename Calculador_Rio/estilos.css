@@ -6,7 +6,7 @@
     outline: none;
 }
 body{
-    background: url(./img/riosins.jpg);
+    background: url("./img/riosins.jpg");
     
     background-size: cover;
 }
