@@ -6,7 +6,8 @@
     outline: none;
 }
 body{
-    background-image: url(/img/riosins.jpg);
+    background: url(./riosins.jpg);
+    
     background-size: cover;
 }
 #cx1{
@@ -70,4 +71,5 @@ select{
     border: 2px solid #000; /* Exemplo de borda, pode ajustar */
     width: 80%; /* Faz o input ocupar boa parte da caixa */
     font-weight: bold;
+    color: black;
 }
