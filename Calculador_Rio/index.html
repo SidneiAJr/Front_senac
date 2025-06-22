@@ -9,25 +9,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div id="cx1">
         <div id="main">
             <h1>Calculadora de Nível do Rio:</h1>
-
             <select id="rios">
                 <option value="sinos">Rio dos Sinos</option>
                 <option value="jacui">Rio Jacuí</option>
                 <option value="taquari">Rio Taquari</option>
             </select>
-
             <input type="text" id="chuvamm" placeholder="Informe a quantidade de Chuva em mm: " min="0" step="0.01">
             <input type="text" id="areaBacia" placeholder="Área da Bacia (km²): " min="0" step="0.01">
             <input type="text" id="nivelAtualRio" placeholder="Nível Atual do Rio (m): " min="0" step="0.01">
             <input type="text" id="coefEscoamento" placeholder="Coeficiente de Escoamento: " min="0" max="1" step="0.01">
-
             <button id="btn_calcular" onclick="verificarNivel()">Calcular</button>
-
+            <canvas id="graficoRio" width="400" height="200"></canvas>
             <div id="res"></div>
         </div>
     </div>
