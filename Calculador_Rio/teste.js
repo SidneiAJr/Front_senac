@@ -45,9 +45,9 @@ function verificarNivel() {
         resultado += `Nível Do Rio Pode Subir Até Aproximadamente: ${novoNivelRio.toFixed(2)} metros.<br><br>`;
 
         if (novoNivelRio >= nivelAlarme) {
-            resultado += `🚨 <strong style="color:red;">ALERTA MÁXIMO: Risco de Inundações Severas!</strong>`;
+            resultado += `🚨 <strong style="color:red;">ALERTA MÁXIMO!</strong>`;
         } else if (novoNivelRio >= nivelTransbordamento) {
-            resultado += `⚠️ <strong style="color:red;">ALERTA: Nível Crítico! Risco de Transbordamento!</strong>`;
+            resultado += `⚠️ <strong style="color:red;">ALERTA Nível Crítico! !</strong>`;
         } else if (novoNivelRio >= nivelAlerta) {
             resultado += `⚠️ <strong style="color:orange;">Aviso: Nível de Atenção Elevado! Monitorar de Perto!</strong>`;
         } else if (novoNivelRio >= nivelAtencao) {
