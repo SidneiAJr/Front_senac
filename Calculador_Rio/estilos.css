@@ -11,8 +11,8 @@ body{
     background-size: cover;
 }
 #cx1{
-    width: 500px;
-    height: 500px;
+    width: 800px;
+    height: 800px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -29,6 +29,10 @@ body{
     transform: translate(-50%,-50%);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     gap: 15px;   
+}
+#res{
+    font-size: 18px;
+    font-weight: bold;
 }
 #main input{
     background: transparent;
@@ -56,10 +60,6 @@ body{
 h1{
     font-size: 30px;
     color: black;
-    font-weight: bold;
-}
-#res{
-    font-size: 18px;
     font-weight: bold;
 }
 select{
