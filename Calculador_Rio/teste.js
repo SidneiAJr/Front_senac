@@ -31,8 +31,13 @@ function verificarNivel() {
         return;
     }
 
-    if (previsaoChuva > 0 && areaDrenagem > 0 && nivelAtualRio >= 0 && coeficienteEscoamento > 0 && coeficienteEscoamento <= 1) {
-
+    if (
+        previsaoChuva > 0 &&
+        areaDrenagem > 0 &&
+        nivelAtualRio >= 0 &&
+        coeficienteEscoamento > 0 &&
+        coeficienteEscoamento <= 1
+    ) {
         let alturaChuvaMetros = previsaoChuva / 1000;
         let volumeAguaTotal = alturaChuvaMetros * areaDrenagem;
         let volumeRealParaRio = volumeAguaTotal * coeficienteEscoamento;
@@ -45,9 +50,9 @@ function verificarNivel() {
         resultado += `Nível Do Rio Pode Subir Até Aproximadamente: ${novoNivelRio.toFixed(2)} metros.<br><br>`;
 
         if (novoNivelRio >= nivelAlarme) {
-            resultado += `🚨 <strong style="color:red;">ALERTA MÁXIMO!</strong>`;
+            resultado += `🚨 <strong style="color:red;">ALERTA MÁXIMO: Risco de Inundações Severas!</strong>`;
         } else if (novoNivelRio >= nivelTransbordamento) {
-            resultado += `⚠️ <strong style="color:red;">ALERTA Nível Crítico! !</strong>`;
+            resultado += `⚠️ <strong style="color:red;">ALERTA: Nível Crítico! Risco de Transbordamento!</strong>`;
         } else if (novoNivelRio >= nivelAlerta) {
             resultado += `⚠️ <strong style="color:orange;">Aviso: Nível de Atenção Elevado! Monitorar de Perto!</strong>`;
         } else if (novoNivelRio >= nivelAtencao) {
@@ -57,6 +62,37 @@ function verificarNivel() {
         }
 
         document.getElementById("res").innerHTML = resultado;
+
+        // === GRÁFICO ===
+
+        // Destroi o gráfico anterior, se já existir
+        if (window.grafico) {
+            window.grafico.destroy();
+        }
+
+        const ctx = document.getElementById("graficoRio").getContext("2d");
+        window.grafico = new Chart(ctx, {
+            type: "bar",
+            data: {
+                labels: ["Nível Atual", "Nível Estimado"],
+                datasets: [{
+                    label: "Nível do Rio (m)",
+                    data: [nivelAtualRio, novoNivelRio],
+                    backgroundColor: ["#3e95cd", "#ff6f61"],
+                    borderColor: ["#2e86de", "#ff3d00"],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        suggestedMax: nivelAlarme + 1
+                    }
+                }
+            }
+        });
 
     } else {
         document.getElementById("res").innerHTML = `Por favor, insira valores válidos e positivos.`;
