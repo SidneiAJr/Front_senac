@@ -16,7 +16,9 @@ html{
     --vidro: rgba(255,255,255,0.1);
 }
 body{
-     background-color:var(--secundaria);
+    background: url(./img/grama.gif) no-repeat center center fixed;
+    background-size: cover;
+    background-color: black;
 }
 .navegacao{
     position: fixed;
