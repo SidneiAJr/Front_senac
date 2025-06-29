@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  background-color: #a3d5d3;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 300px;
+  margin: 20px;
+}
+
+.b {
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(223, 219, 219, 0.1);
+  backdrop-filter: blur(200px);
+  border: 2px solid #000000;
+}
+input,button{
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  background-color: #ffffffcc;
+  border-radius: 30px;
+  outline: none;
+  border: 3px solid black;
+  padding: 10px 20px;
+  margin: 5px;
+
+}
+#saida{
+  font-size: 20px;
+  font-weight: bolder;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+button:hover{
+  background-color: transparent;
+  font-size: 20px;
+  border: 2px solid black;
+}
