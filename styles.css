@@ -16,7 +16,7 @@ html{
     --vidro: rgba(255,255,255,0.1);
 }
 body{
-    background: url(./img/b1.gif) no-repeat center center fixed;
+    background: url(./img/teste1.gif) no-repeat center center fixed;
     background-size: cover;
     background-color: black;
 }
