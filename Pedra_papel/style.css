@@ -6,13 +6,13 @@
     font-weight: bolder;
 }
 body{
-    background-color: #F4D793;
+    background: linear-gradient(to left,#ab9f81,#889E73,#4682A9);
     background-size: cover;
 }
 h1{
     font-size: 50px;
     color: #889E73;
-    font-weight: bold;
+    font-weight: bolder;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -32,8 +32,11 @@ h3{
     height: 400px;
 }
 .b{
-    background-color: #FFF6DA;
-    border-radius: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2); /* branco com transparência */
+    padding: 20px;
+    backdrop-filter: blur(10px); /* opcional: efeito de desfoque no fundo */
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 button{
     width: 200px;
@@ -44,16 +47,15 @@ button{
     color: white;
     font-size: 20px;
     cursor: pointer;
-    border: 2px solid black;
+    border: 3px solid black;
 }
 button:hover{
     font-size: 20px;
     font-weight: bold;
-    background-color: transparent;
-    background-color: #889E73;
+    background-color: #A94A4A;
     border-radius: 20px;
     border: 2px solid black;
-    opacity: 30%;
+    opacity: 50%;
 }
 #res{
     font-size: 20px;
