@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to left, #222831,#393E46,#948979,#DFD0B8);
+    padding: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 20px;
+    margin: 250px;
+    /* Espaço entre as caixas */
+}
+.caixa {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   backdrop-filter: blur(700px);
+   background-color: transparent;
+}
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #393E46;
+    border-radius: 15px;
+    color: #DFD0B8; /* cor clara que já está no fundo */
+    transition: background-color 0.3s ease;
+    border: 3px solid black;
+}
+button:hover {
+    background-color: #222831; /* escurece no hover */
+    font-size: 20px;
+}
+h2{
+    color: white;
+    font-size: 40px;
+    text-shadow: 0 0 0 40px black;
+}
+#peg{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
