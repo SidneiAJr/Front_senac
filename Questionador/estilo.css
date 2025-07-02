@@ -9,6 +9,17 @@ body {
     background: linear-gradient(to left, #222831,#393E46,#948979,#DFD0B8);
     padding: 40px;
 }
+#img{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 15px;
+    border: 3px solid #DFD0B8 ;
+    justify-content: center;
+    align-items: center;  /* Centraliza o conteúdo dentro da div */
+    display: flex;        /* Flexbox é necessário para o alinhamento */
+    margin: 0 auto;       /* Isso vai centralizar a div dentro do seu container */
+}
 
 .container {
     display: flex;
