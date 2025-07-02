@@ -35,12 +35,12 @@ botoes.forEach((botao) => {
     // Verifica se o jogador 1 ainda não fez a escolha
     if (jogador1 === null) {
       jogador1 = escolha;
-      textoJ1.textContent = "Jogador 1 já escolheu: " + jogador1;
+      textoJ1.textContent = "Jogador 1 já escolheu: ";
       resultado.textContent = "Vez do Jogador 2!";
     } else if (jogador2 === null) {
       // Verifica se o jogador 2 ainda não fez a escolha
       jogador2 = escolha;
-      textoJ2.textContent = "Jogador 2 já escolheu: " + jogador2;
+      textoJ2.textContent = "Jogador 2 já escolheu: " ;
       const resultadoJogo = jogar(jogador1, jogador2);
       resultado.textContent = `${resultadoJogo} ${jogador1} | ${jogador2}`;
     }
