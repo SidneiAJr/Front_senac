@@ -5,5 +5,5 @@ function soft() {
 
 function hard() {
     let pergunta2 = prompt("Qual Hard Skill você gosta?")
-    document.getElementById("peg").innerHTML = `Sua resposta é: ${pergunta2}. Está certo? Obrigado por usar o questionador dos guri.`
+    document.getElementById("peg2").innerHTML = `Sua resposta é: ${pergunta2}. Está certo? Obrigado por usar o questionador dos guri.`
 }
