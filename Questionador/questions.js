@@ -1,8 +1,8 @@
 function soft() {
     let pergunta = prompt("Qual sua Softskill preferida?")
     let pergunta3 = prompt("Qual sua Softskill preferida?")
-    document.getElementById("peg").innerHTML = `Sua resposta é: ${pergunta}. Está certo? Obrigado por usar o questionador dos guri.`
-    document.getElementById("peg").innerHTML = `Sua resposta é: ${pergunta3}. Está certo? Obrigado por usar o questionador dos guri.`
+    document.getElementById("peg1").innerHTML = `Resposta 1 é: ${pergunta}. Está certo? Obrigado por usar o questionador dos guri.`
+    document.getElementById("peg3").innerHTML = `Resposta 2 é: ${pergunta3}. Está certo? Obrigado por usar o questionador dos guri.`
 }
 
 function hard() {
