@@ -4,34 +4,32 @@
     box-sizing: border-box;
     font-family: "Roboto", serif;
 }
+body{
+    background: linear-gradient(to left, #A2D5C6, #74a085, #1B3C53, #494444);
+}
 .main{
     display: flex;
     justify-content: center;
-}
-body{
-    background-color: rgb(10, 79, 82);
+    padding: 200px;
+    margin: 20px;
 }
 .box{
-    width: 300px;
-    height: 300px;
-    text-align: center;
+    width: 400px;
+    height: 400px;
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-size: 20px;
     font-weight: bold;
-    position: absolute;
     border-radius: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     backdrop-filter: blur(100px);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border: 2px solid black;
+    border: 3px solid black;
 }
-
 .box h1{
-    font-size: 20px;
+    font-size: 50px;
     font-weight: bold;
 }
 .box input{
@@ -39,16 +37,27 @@ body{
     border: 1px solid black;
     border-radius: 20px;
     font-size: 19px;
+    height: 50px;
+    width: 300px;
 }
 .box button{
-    border: 1px solid black;
+    border: none;
     border-radius: 20px;
     font-size: 20px;
     cursor: pointer;
     background-color: grey;
+    height: 50px;
+    width: 300px;
 }
 .box button:hover{
     background-color: transparent;
+    font-size: 20px;
+    color: white;
+    background-color: blueviolet;
+}
+.box:hover{
+    font-size: 30px;
+    cursor: pointer;
 }
 
 #res,#res2{
