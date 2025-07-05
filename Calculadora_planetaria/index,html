@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="consulta.js"></script>
+</head>
+
+<body>
+    <div class="a">
+        <div class="b">
+            <h1>Calculadora de Peso em Planetas:</h1>
+            <button class="btn" onclick="planetario()">Verificar</button>
+            <input id="info" placeholder="Peso na Terra">
+            <div id="tamanho"></div>
+    </div>
+</body>
+
+</html>
