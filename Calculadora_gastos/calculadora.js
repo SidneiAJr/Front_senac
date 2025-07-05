@@ -4,26 +4,53 @@ function calculadora() {
     const gastos2 = Number(document.getElementById("conta2").value);
     const gastos3 = Number(document.getElementById("conta3").value);
     const gastos4 = Number(document.getElementById("conta4").value);
+    let imposto = 0;
 
+    // Verifica se os valores são válidos
     if (
-        !isNaN(salario) && salario > 0 &&
-        !isNaN(gastos) && gastos >= 0 &&
-        !isNaN(gastos2) && gastos2 >= 0 &&
-        !isNaN(gastos3) && gastos3 >= 0 &&
-        !isNaN(gastos4) && gastos4 >= 0
+        isNaN(salario) || isNaN(gastos) || isNaN(gastos2) || 
+        isNaN(gastos3) || isNaN(gastos4)
     ) {
-        const somagastos = gastos + gastos2 + gastos3 + gastos4;
-        const salarioLiquido = salario - somagastos;
-        const reserva = salarioLiquido * 0.30;
-        const sobraSalario = salarioLiquido - reserva;
-
-        document.getElementById("res").innerHTML = `
-            Gastos Totais R$: ${somagastos.toFixed(2)}<br>
-            Salário Líquido R$: ${salarioLiquido.toFixed(2)}<br>
-            Reserva 30% R$: ${reserva.toFixed(2)}<br>
-            Salário com desconto da Reserva R$: ${sobraSalario.toFixed(2)}<br>
-        `;
-    } else {
-        document.getElementById("res").innerHTML = "Por favor, insira apenas números válidos maiores que zero.";
+        document.getElementById("res").innerHTML = "Por favor, insira apenas números.";
+        return;
     }
+
+    // Verifica se algum valor é negativo ou salário zerado
+    if (
+        salario <= 0 || gastos < 0 || gastos2 < 0 || 
+        gastos3 < 0 || gastos4 < 0
+    ) {
+        document.getElementById("res").innerHTML = "Não são permitidos valores negativos ou salário zerado.";
+        return;
+    }
+
+    // Cálculo do imposto com base na tabela atual (alíquota - dedução)
+    if (salario <= 2259.20) {
+        imposto = 0;
+    } else if (salario <= 2826.65) {
+        imposto = (salario * 0.075) - 169.44;
+    } else if (salario <= 3751.05) {
+        imposto = (salario * 0.15) - 381.44;
+    } else if (salario <= 4664.68) {
+        imposto = (salario * 0.225) - 662.77;
+    } else {
+        imposto = (salario * 0.275) - 896.00;
+    }
+
+    if (imposto < 0) imposto = 0; // Proteção contra imposto negativo
+
+    // Cálculos
+    const somagastos = gastos + gastos2 + gastos3 + gastos4;
+    const salarioAposDescontos = salario - somagastos - imposto;
+    const reserva = salarioAposDescontos * 0.30;
+    const sobraSalario = salarioAposDescontos - reserva;
+
+    // Resultado final
+    document.getElementById("res").innerHTML = `
+        IR sobre Salário: R$ ${imposto.toFixed(2)}<br>
+        Gastos Totais (sem IR): R$ ${somagastos.toFixed(2)}<br>
+        Salário Líquido (após IR e Gastos): R$ ${salarioAposDescontos.toFixed(2)}<br>
+        Reserva (30% do líquido): R$ ${reserva.toFixed(2)}<br>
+        Salário Final com Reserva: R$ ${sobraSalario.toFixed(2)}
+    `;
 }
