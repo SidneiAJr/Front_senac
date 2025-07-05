@@ -8,7 +8,7 @@
 }
 
 body {
-    background: url(d.jpg);
+    background: url("d.jpg");
 }
 
 .a {
