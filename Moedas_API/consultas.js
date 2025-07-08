@@ -3,7 +3,6 @@ async function consultar() {
     try {
         const resposta = await fetch(url); // Faz a requisição
         const dados = await resposta.json(); // Converte a resposta para JSON
-        console.log(dados); // Mostra os dados no console
         // Exibe os dados no HTML
         document.getElementById("dolar").innerHTML = `
         Dólar: R$ ${Number(dados.USDBRL.bid).toFixed(2)}<br>
