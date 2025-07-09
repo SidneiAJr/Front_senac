@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: linear-gradient(to left, #E8C999, #8E1616, #000000);
+}
+
+.a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    padding: 250px;
+}
+
+.b {
+    height: 350px;
+    width: 600px;
+    border: 5px solid black;
+    border-radius: 12px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+input{
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+}
+button{
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #456882;
+}
+#res{
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+}
+h1{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white; 
+}
