@@ -54,7 +54,10 @@ function atualizar(){
     if(teclas.ArrowUp)raquete.y -= raquete.velocidade
     if(teclas.ArrowDown)raquete.y += raquete.velocidade
     if(raquete.y<0)raquete.y=0
-    
+    if(raquete.y+raquete.altura>canvas.height){
+        raquete.y=canvas.height-raquete.altura
+    }
+
 
 }
 
