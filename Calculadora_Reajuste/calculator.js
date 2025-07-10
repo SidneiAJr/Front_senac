@@ -7,7 +7,6 @@ function calculador(){
     if(!isNaN(valor1)||!isNaN(valor2)){
         reajuste = valor2 - valor1
         Percentual = (valor1/valor2)*100
-        if(Percentual>50){
             document.getElementById("res").innerHTML=`
             Diferença R$: ${reajuste} <br>
             Percentual de Reajuste: ${Percentual.toFixed(2)} %
@@ -16,4 +15,3 @@ function calculador(){
              document.getElementById("res").innerHTML=`Melhore!!`
         }
     }
-}
