@@ -33,3 +33,12 @@ document.addEventListener('keydown',(evento)=>{
         teclas.ArrowDown = true
     }
 })
+document.addEventListener('keyup',(evento)=>{
+    if(evento.key === 'ArrowUp'){
+        teclas.ArrowUp = false
+    } else if(evento.key === 'ArrowDown'){
+        teclas.ArrowDown = false
+    }
+})
+
+
