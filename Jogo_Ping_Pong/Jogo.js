@@ -25,7 +25,6 @@ const teclas ={
     ArrowUp:false,
     ArrowDown:false
 }
-
 document.addEventListener('keydown',(evento)=>{
     if(evento.key === 'ArrowUp'){
         teclas.ArrowUp = true
@@ -40,5 +39,25 @@ document.addEventListener('keyup',(evento)=>{
         teclas.ArrowDown = false
     }
 })
+function desenharRaquete() {
+    ctx.fillStyle = "white"
+    ctx.fillRect(raquete.x, raquete.y, raquete.largura, raquete.altura)
+}
+function desenharBola() {               
+    ctx.fillStyle = "white"
+    ctx.beginPath()
+    ctx.arc(bola.x, bola.y, bola.raio, 0, Math.PI * 2)
+    ctx.fill()
+}
+function atualizar(){
+    if(jogoAcabou) return
+    if(teclas.ArrowUp)raquete.y -= raquete.velocidade
+    if(teclas.ArrowDown)raquete.y += raquete.velocidade
+    if(raquete.y<0)raquete.y=0
+    
+
+}
+
+
 
 
