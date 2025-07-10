@@ -25,3 +25,11 @@ const teclas ={
     ArrowUp:false,
     ArrowDown:false
 }
+
+document.addEventListener('keydown',(evento)=>{
+    if(evento.key === 'ArrowUp'){
+        teclas.ArrowUp = true
+    } else if(evento.key === 'ArrowDown'){
+        teclas.ArrowDown = true
+    }
+})
