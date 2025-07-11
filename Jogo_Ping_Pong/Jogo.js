@@ -39,16 +39,6 @@ document.addEventListener('keyup',(evento)=>{
         teclas.ArrowDown = false
     }
 })
-function desenharRaquete() {
-    ctx.fillStyle = "white"
-    ctx.fillRect(raquete.x, raquete.y, raquete.largura, raquete.altura)
-}
-function desenharBola() {               
-    ctx.fillStyle = "white"
-    ctx.beginPath()
-    ctx.arc(bola.x, bola.y, bola.raio, 0, Math.PI * 2)
-    ctx.fill()
-}
 function atualizar(){
     if(jogoAcabou) return
     if(teclas.ArrowUp)raquete.y -= raquete.velocidade
@@ -77,8 +67,28 @@ function atualizar(){
             location.reload() // Reinicia o jogo
         }, 100)
     }
+    if(bola.x+bola.raio>canvas.width){
+        bola.dx *= -1 // Inverte a direção horizontal da bola
+    }
 }
-
+function desenhar(){
+    ctx.clearRect(0, 0, canvas.width, canvas.height) // Limpa o canvas
+    ctx.fillStyle = "black"
+    ctx.fillRect(raquete.x, raquete.y, raquete.largura, raquete.altura) // Desenha a raquete
+    ctx.beginPath()
+    ctx.arc(bola.x, bola.y, bola.raio, 0, Math.PI * 2) // Desenha a bola
+    ctx.fillStyle = "red"
+    ctx.fill()
+    ctx.closePath()
+}
+function loopDojo(){
+    atualizar()
+    desenhar()
+    if(!jogoAcabou){
+        requestAnimationFrame(loopDojo) // Chama o loop novamente se o jogo não acabou
+    }
+}
+loopDojo() // Inicia o loop do jogo
 
 
 
