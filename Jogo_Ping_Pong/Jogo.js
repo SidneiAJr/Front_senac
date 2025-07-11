@@ -57,9 +57,28 @@ function atualizar(){
     if(raquete.y+raquete.altura>canvas.height){
         raquete.y=canvas.height-raquete.altura
     }
-
-
+    bola.x += bola.dx
+    bola.y += bola.dy
+    if(bola.y - bola.raio < 0){
+        bola.dy *= -1 // Inverte a direção vertical da bola
+    }
+    if(bola.y + bola.raio > canvas.height){
+        bola.dy *= -1 // Inverte a direção vertical da bola
+    }
+    if(bola.x - bola.raio < raquete.x + raquete.largura && bola.y > raquete.y && bola.y < raquete.y + raquete.altura){
+        bola.dx *= -1 // Inverte a direção horizontal da bola
+        pontuacao += 1 // Incrementa a pontuação
+        scoreDisplay.textContent = `Pontuação: ${pontuacao}` // Atualiza o display de pontuação
+    }
+    if(bola.x - bola.raio<0){
+        jogoAcabou = true
+        setTimeout(() => {
+            alert("Fim de jogo! Sua pontuação final é: " + pontuacao)
+            location.reload() // Reinicia o jogo
+        }, 100)
+    }
 }
+
 
 
 
