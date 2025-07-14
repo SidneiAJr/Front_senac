@@ -19,11 +19,11 @@ function calcular() {
     const total = contamoeda1+contamoeda2+contamoeda3+contamoeda4+contamoeda5
     document.getElementById("res").innerHTML = `
     Valor Total R$ ${total.toFixed(2)}<br>
-    Moedas de 1 ValorR$: ${contamoeda1.toFixed(2)}<br>
-    Moedas de 0.50 ValorR$:${contamoeda2.toFixed(2)}<br>
-    Moedas de 0.25 ValorR$:${contamoeda3.toFixed(2)}<br>
-    Moedas de 0.10 ValorR$: ${contamoeda4.toFixed(2)}<br>
-    Moedas de 0.05 ValorR$:${contamoeda5.toFixed(2)}<br>
+    Moedas de R$ 1.00 Valor R$: ${contamoeda1.toFixed(2)}<br>
+    Moedas de R$ 0.50 Valor R$:${contamoeda2.toFixed(2)}<br>
+    Moedas de R$ 0.25 Valor R$:${contamoeda3.toFixed(2)}<br>
+    Moedas de R$ 0.10 Valor R$: ${contamoeda4.toFixed(2)}<br>
+    Moedas de R$ 0.05 Valor R$:${contamoeda5.toFixed(2)}<br>
     `
     }else{
         document.getElementById("res").innerHTML =`Favor Informar o Numero correto!!`
