@@ -67,10 +67,5 @@ Este repositório reúne diversos mini-projetos desenvolvidos com **HTML**, **CS
 - Alguns projetos utilizam **efeitos visuais** com `backdrop-filter`, **animações simples**, e interfaces personalizadas com **responsividade**.
 - Recursos como ícones, fontes externas e imagens foram utilizados para melhorar a **UX/UI**.
 
----
 
-## 🚀 Como rodar localmente
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/seu-repo.git
