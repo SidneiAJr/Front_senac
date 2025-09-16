@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WoWs Calculator</title>
+  <script src="logica.js" defer></script>
+  <link rel="stylesheet" href="navio.css" />
+</head>
+
+<body>
+  <div class="a">
+    <div class="b">
+      <h1 id="title">WoWs Calculator - Secondary and Primary Battery</h1>
+      <h3>Created by Abertão das massa</h3>
+
+      <label for="tempobase2" id="labelRecargaPrimaria">Base Reload Time Primary Battery (s)</label><br />
+      <input type="number" id="tempobase2" /><br />
+
+      <label for="tempobase" id="labelRecargaSecundaria">Base Reload Time Secondary Battery (s)</label><br />
+      <input type="number" id="tempobase" /><br />
+
+      <label for="alcance_base" id="labelAlcance">Base Range Secondary Battery  (km)</label><br />
+      <input type="number" id="alcance_base" /><br />
+
+      <label for="hp_atual" id="labelHp">Current HP (%)</label><br />
+      <input type="number" id="hp_atual" /><br />
+
+      <label for="tier" id="labelTier">Ship Tier:</label><br />
+      <select id="tier">
+        <option value="1">Tier I</option>
+        <option value="2">Tier II</option>
+        <option value="3">Tier III</option>
+        <option value="4">Tier IV</option>
+        <option value="5">Tier V</option>
+        <option value="6">Tier VI</option>
+        <option value="7">Tier VII</option>
+        <option value="8">Tier VIII</option>
+        <option value="9">Tier IX</option>
+        <option value="10">Tier X</option>
+      </select><br /><br />
+      <button id="btnCalculate" onclick="calculator()">Calculate</button>
+      <div id="res"></div>
+    </div>
+  </div>
+</body>
+
+</html>
