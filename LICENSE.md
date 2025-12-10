@@ -7,7 +7,7 @@ Este código é de **propriedade exclusiva** e está protegido por direitos auto
 - **Proibido copiar**: Você não pode copiar, modificar, distribuir ou criar trabalhos derivados deste código.
 - **Proibido vender**: Você não pode vender, licenciar ou transferir este código ou qualquer parte dele para fins comerciais.
 - **Proibido uso comercial**: O uso do código é estritamente limitado a fins pessoais e **não comerciais**.
-- **Atribuição**: Caso você seja autorizado a utilizar o código, deve sempre dar **crédito adequado** a [Seu Nome], **sem sugerir apoio ou associação**.
+- **Atribuição**: Caso você seja autorizado a utilizar o código, deve sempre dar **crédito adequado** , **sem sugerir apoio ou associação**.
   
 **Qualquer violação a estes termos será tratada legalmente.**
 
