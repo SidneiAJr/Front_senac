@@ -16,7 +16,7 @@ html{
     --vidro: rgba(255,255,255,0.1);
 }
 body{
-    background: linear-gradient(135deg, #0f0f1c, #8A2BE2, #FF00FF, #00FFFF);
+     background: linear-gradient(135deg, #1f1c2c, #928dab, #e0c3fc);
     /*background: url(./img/teste1.gif) no-repeat center center fixed;*/
     background-size: cover;
     background-color: black;
