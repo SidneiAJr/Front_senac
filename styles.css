@@ -19,7 +19,7 @@ html{
 }
 
 body{
-    background: linear-gradient(135deg, #1f1c2c, #928dab, #e0c3fc);
+    background: linear-gradient(135deg, #020617, #0f172a, #020617);
     /*background: url(./img/teste1.gif) no-repeat center center fixed;*/
     background-size: cover;
     background-color: black;
@@ -47,6 +47,7 @@ body{
     font-weight: 500;
     position: relative;
     padding: 0.5rem 0;
+    font-weight: bolder;
 }
 
 .menu-link:hover{
@@ -94,6 +95,10 @@ h1{
     margin: 20px;
 }
 
+h3{
+    color: white;
+}
+
 .par{
     font-size: 1.5rem;
     font-weight: bold;
@@ -113,7 +118,7 @@ h1{
 
 .sobre-titulo{
     font-size: 4rem;
-    color: var(--claro);
+    color: white;
     text-align: center;
     margin-bottom: 20px;
     text-shadow: 0 0 5px var(--claro); 
@@ -134,6 +139,7 @@ h1{
     text-align: center;
     font-size: 1.2rem;
     text-shadow: 0 0 5px var(--claro); 
+    color: white;
 }
 
 /* ================= SEÇÃO LINGUAGENS ================= */
@@ -188,6 +194,7 @@ h1{
     font-size: 2.5rem;
     margin-bottom: 50px;
     text-shadow: 0 0 5px var(--claro); 
+    color: white;
 }
 
 .projetos-caixa{
