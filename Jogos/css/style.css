@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+   background-image: url("https://e1.pxfuel.com/desktop-wallpaper/745/602/desktop-wallpaper-war-thunder-tank-is-2-tiger-ii-gaijin-entertainment-tiger-ii.jpg");
+   background-size: cover;
+}
+
+.a{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.b{
+    padding: 100px;
+    font-size: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1{
+    color: white;
+}
+h2{
+    color: white;
+    font-size: 20px;
+}
+h3{
+     color: white;
+    font-size: 20px;
+}
+img{
+    height: 550px;
+    width: 550px;
+}
+.ammo{
+    height: 50px;
+    width: 50px;
+}
+p{
+    color: white;
+    font-weight: bolder;
+}
+.titulo{
+    font-size: 30px;
+    color: red;
+}
+.gif{
+    height: 300px;
+    width: 300px;
+    border-radius: 250px;
+}
