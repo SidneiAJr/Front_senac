@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,17 +26,17 @@
         <a href="#sobre" class="menu-link">Sobre</a>
       </li>
       <li>
-        <a href="https://github.com/SidneiAJr/Jogo_Senac_Curso" class="menu-link" target="_blank">Desevolvimento de
-          Jogos</a>
+        <a href="#Frontend" class="menu-link">Projetos Frontend</a>
       </li>
       <li>
-        <a href="https://sidneiajr.github.io/OpenSource_WEB_Pag/" class="menu-link" target="_blank">Ferramentas
-          OpenSource</a>
+        <a href="#full" class="menu-link">Projetos FullStack | Privado</a>
+      </li>
+      <li>
+        <a href="#java" class="menu-link">Projetos Java | Privado</a>
       </li>
     </ul>
   </nav>
   <main id="inicio" class="cabecalho">
-    <img src="img/alb.png" alt="" class="foto-perfil">
     <h1>Sidnei Jr </h1>
     <p class="par"> Desenvolvedor Backend Jr | Estudante de TDS | Em busca de Estágio</p>
     <div class="social-media">
@@ -44,8 +45,7 @@
       <a href="https://github.com/SidneiAJr" target="_blank"><img width="48" height="48"
           src="https://img.icons8.com/liquid-glass/48/github.png" alt="github" /></a>
     </div>
-  </main>
-  <section id="Linguagens" class="sobre2">
+    <section id="Linguagens" class="sobre2">
     <p class="par2">Conhecimento | Linguagens:</p>
     <div class="linguagens">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
@@ -53,8 +53,13 @@
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.svg" />
     </div>
   </section>
+    
+  </main>
+  
 
   <section id="sobre" class="sobre">
     <h2 class="sobre-titulo">Sobre mim | Formações:</h2>
@@ -73,7 +78,7 @@
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
     </div>
-    <div class="projetos-caixa">
+    <div class="projetos-caixa" id="Frontend">
       <div class="projetos-card">
         <img src="img/Projeto Gerador de senha.png" alt="" class="projetos-imagem">
         <h3>Gerador de senha em JS</h3>
@@ -130,31 +135,7 @@
       </div>
     </div>
   </section>
-  <section id="projetos" class="projetos">
-    <h2 class="projetos-titulo">Meus Projetos | Pessoais:</h2>
-     <h6>Linguagens Usadas:</h6>
-    <div class="ling-type">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" />
-    </div>
-    <div class="projetos-caixa">
-      <div class="projetos-card">
-        <h3>Wiki Pessoal | Wiki dos Guri</h3>
-        <p class="paragrafo-projetos">Este repositório tem como objetivo guardar e compartilhar o conhecimento adquirido
-          ao longo da vida, com o intuito de ajudar outras pessoas que buscam aprendizado em diversas áreas. Se você
-          está em busca de informações, curiosidades ou quer explorar temas variados, fique à vontade para navegar e
-          aprender. Espero que este conteúdo seja útil para sua jornada de aprendizado, assim como foi para a minha.</p>
-        <p class="paragrafo-projetos">Proibido Vender!⚠️</p>
-        <a href="https://github.com/SidneiAJr/Wiki-dos-Guri" target="_blank" id="b">Ver</a>
-      </div>
-      <div class="projetos-card">
-        <h3>Albertool</h3>
-        <p class="paragrafo-projetos">Este repositório tem como objetivo fornecer soluções para automação de projetos e
-          oferecer suporte geral para facilitar o desenvolvimento e a colaboração</p>
-        <p class="paragrafo-projetos">Proibido Vender!⚠️</p>
-        <a href="" target="_blank" id="b">Ver</a>
-      </div>
-  </section>
-  <section id="projetos" class="projetos">
+  <section id="full" class="projetos">
     <h2 class="projetos-titulo">Meus Projetos | FullStack:</h2>
     <h6>Linguagens Usadas:</h6>
      <div class="ling-type">
@@ -165,7 +146,7 @@
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.svg" />
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
     </div>
-    <div class="projetos-caixa">
+    <div class="projetos-caixa" id="java">
       <div class="projetos-card">
         <h3>HydroRS | Sistema de Monitoramento de Rios</h3>
         <p class="paragrafo-projetos">⭐ Projeto destaque</p>
@@ -190,7 +171,7 @@
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
     </div>
-    <div class="projetos-caixa">
+    <div class="projetos-caixa" id="java">
       <div class="projetos-card">
           <img src="img/1766015197634.jpg" alt="" class="projetos-imagem">
         <h3>DevTools BR Raiz | Multi Função(Somente Android)</h3>
@@ -203,14 +184,6 @@
         <img src="img/pilaox.png" alt="" class="projetos-imagem">
         <h3> PilãoX| Sistema de Gerenciamento de entradas e Saida | Java</h3>
         <p class="paragrafo-projetos">Projeto para entradas e saidas de empresa</p>
-        <p class="paragrafo-projetos">Em Desevolvimento🏗️</p>
-        <p class="paragrafo-projetos">Proibido Vender!⚠️</p>
-        <a href="" target="_blank" id="b">Ver</a>
-      </div>
-      <div class="projetos-card">
-        <img src="img/z.png" alt="" class="projetos-imagem">
-        <h3>Quantum PDF | Leitor de PDF | Java</h3>
-        <p class="paragrafo-projetos">Projeto Leitor de PDF simples direto</p>
         <p class="paragrafo-projetos">Em Desevolvimento🏗️</p>
         <p class="paragrafo-projetos">Proibido Vender!⚠️</p>
         <a href="" target="_blank" id="b">Ver</a>
