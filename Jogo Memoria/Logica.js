@@ -137,7 +137,7 @@ function trocarCartas() {
     if (igual) { // Se forem iguais
         primeiraCarta.removeEventListener("click", virarCarta);
         segundaCarta.removeEventListener("click", virarCarta);
-        pontos += 1;
+        pontos += 3;
         tentativas += 1;
         atualizarPontuacao();
         resetar();
@@ -166,7 +166,7 @@ function resetar_pont() {
         carta.addEventListener("click", virarCarta);    
     });
 
-    fundo.style.background = 'url("https://w0.peakpx.com/wallpaper/230/86/HD-wallpaper-zac-zac-league-of-legends-lol-league-of-legends.jpg")';
+    fundo.style.background = 'black';
     fundo.style.backgroundSize = 'cover';
     alert("Resetado | Jogos Reiniciado! 🤣🤣");
 }
