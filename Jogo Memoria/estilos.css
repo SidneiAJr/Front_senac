@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   background: url(https://64.media.tumblr.com/214581716cb4700891fee981197f0ff0/tumblr_ov3rmh2IuN1t1uzxmo1_400.gif);
+   background-size: cover;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 200px); 
+    gap: 15px;
+    justify-content: center;
+}
+
+.card1,.card2,.card3,.card4,.card5,.card6,.card7, .card8{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   flex-direction: column;
+   height: 50%;
+   border: 3px solid black;
+   margin: 5px;
+}
+
+
+h1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+h2{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder; 
+}
+
+h3{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+h4{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+h5{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
+.card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8{
+    perspective: 1000px;
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.card1 img, .card2 img, .card3 img, .card4 img,
+.card5 img, .card6 img, .card7 img, .card8 img {
+    backface-visibility: hidden;
+}
+
+.card1 img, .card2 img, .card3 img, .card4 img,
+.card5 img, .card6 img, .card7 img, .card8 img {
+    display: none;
+}
+
+.card1, .card2, .card3, .card4,
+.card5, .card6, .card7, .card8 {
+    background-image: url(./verso\ de\ carta.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+img {
+    display: none;
+}
+
+.card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover,
+.card5:hover, .card6:hover, .card7:hover, .card8:hover{
+    transform: scale(1.05);
+}
+
+button{
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    background-color:#8b890b;
+    border: none;
+    font-weight: bolder;
+    margin: 3px;
+}
+
+button:hover{
+    background-color: red;
+    cursor: pointer;
+    font-weight: bolder;
+    font-style: italic;
+}
