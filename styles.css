@@ -20,7 +20,6 @@ html{
 
 body{
     background: linear-gradient(135deg, #020617, #0f172a, #020617);
-    /*background: url(./img/teste1.gif) no-repeat center center fixed;*/
     background-size: cover;
     background-color: black;
 }
@@ -127,7 +126,6 @@ h3{
     max-width: 1000px;
     margin: 0 auto;
     border-radius: 16px;
-    border: 1px solid var(--vidro);
     background: rgba(15,23,42,0.0.5) ;
     backdrop-filter: blur(30px);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -181,7 +179,6 @@ h3{
     background: rgba(255,255,255,0.01);
     border-radius: 16px;
     backdrop-filter: blur(25px);
-    border: 1px solid var(--vidro);
     transition: all 0.5s ease;
     overflow: hidden;
     cursor: pointer;
