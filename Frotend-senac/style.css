@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+}
+
+/* ===== TOP BAR ===== */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 40px;
+    z-index: 1001;
+}
+
+.top-bar-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-contacts {
+    display: flex;
+    gap: 25px;
+}
+
+.top-contacts span {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.top-social {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.top-social span {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.top-social img {
+    filter: brightness(0) invert(1);
+    transition: opacity 0.3s;
+    width: 14px;
+}
+
+.moon-btn {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 50%;
+}
+
+/* ===== HEADER ===== */
+header {
+    position: fixed;
+    top: 42px;
+    left: 0;
+    width: 100%;
+    background: rgba(182, 157, 157, 0.27);
+    backdrop-filter: blur(6px);
+    padding: 15px 40px;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-text {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+
+.main-nav {
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    padding-right: 25px;
+    transition: color 0.3s;
+}
+
+.main-nav a:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.main-nav a:hover {
+    color: #ffd700;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.buy-btn {
+    background: #2c3e2b;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.search-icon input {
+    width: 150px;
+    padding: 6px 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+}
+
+#menu-toggle {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+/* MENU MOBILE - ESCONDIDO */
+.mobile-menu {
+    display: none;
+    overflow: hidden;
+}
+
+/* ===== HERO ===== */
+.hero {
+    height: 100vh;
+    background-image: url('https://wanderland.qodeinteractive.com/wp-content/uploads/2019/11/h1-rev-slide1-bckg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-meta {
+    margin-bottom: 20px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.hero h1 {
+    font-size: 62px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 35px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.read-more-btn {
+    background: #255820;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ===== TRAVEL ESSENTIALS ===== */
+.travel-essentials {
+    padding: 100px 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h3 {
+    font-size: 14px;
+    color: #7c9c6e;
+    letter-spacing: 2px;
+}
+
+.section-header h2 {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.tips-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.tip-card {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tip-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.tip-text {
+    flex: 1;
+    padding: 40px;
+}
+
+.tip-text h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.tip-text p {
+    font-size: 15px;
+    color: #666;
+}
+
+.tip-image {
+    flex: 1;
+}
+
+.tip-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.tip-image:hover img {
+    transform: translateX(10px);
+}
+
+/* ===== NEWSLETTER ===== */
+.newsletter {
+    background: #f0f3ee;
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.newsletter-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.newsletter h3 {
+    font-size: 14px;
+    color: #7c9c6e;
+    letter-spacing: 2px;
+}
+
+.newsletter h2 {
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.newsletter p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.newsletter-form input {
+    width: 350px;
+    padding: 14px 20px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.newsletter-form button {
+    background: #2c3e2b;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ===== DIGITAL RESORT ===== */
+.digital-resort {
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 100px 40px;
+    gap: 60px;
+}
+
+.resort-content {
+    flex: 1;
+}
+
+.resort-content h2 {
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.resort-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.resort-image {
+    flex: 1;
+}
+
+.resort-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #1a1a1a;
+    color: #aaa;
+    padding: 50px 40px;
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo span {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-contact {
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+}
+
+/* ===== RESPONSIVIDADE - SÓ ATÉ 600px ===== */
+@media (max-width: 600px) {
+
+    .top-contacts {
+        display: none;
+    }
+
+    /* Esconde menu desktop */
+    .main-nav {
+        display: none;
+    }
+
+    /* Mostra ícone do menu */
+    #menu-toggle {
+        display: block;
+    }
+
+    /* Esconde o botão BUYNOW no mobile */
+    .buy-btn {
+        display: none;
+    }
+
+    /* Ajusta o input de busca */
+    .search-icon input {
+        width: 100px;
+    }
+
+    /* MENU MOBILE - aparece ao clicar */
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        overflow: hidden;
+        top: 60px;
+        right: 15px;
+        background: rgba(0, 0, 0, 0.95);
+        border-radius: 10px;
+        padding: 15px;
+        width: 180px;
+        text-align: center;
+        z-index: 1001;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mobile-menu a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        display: block;
+    }
+
+    .mobile-menu a:hover {
+        background: red;
+        color: #1a1a1a;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+    }
+
+    /* Ajustes gerais */
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .section-header h2 {
+        font-size: 28px;
+    }
+
+    .tip-card,
+    .tip-card.reverse {
+        flex-direction: column;
+    }
+
+    .digital-resort {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+        max-width: 300px;
+    }
+}
