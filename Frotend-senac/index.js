@@ -11,7 +11,7 @@ function modonoturno(){
    titulos.style.fontWeight = "bold";
    textos.style.fontSize = "50px";
    textos2.style.fontSize = "50px";
-   textos2.style.color = "black";
+   textos2.style.color = "white";
    textos2.style.fontStyle = "bolder";
    textos3.style.fontSize = "50px";
    textos3.style.color = "black";
