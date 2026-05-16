@@ -1,3 +1,7 @@
+/* ======================== */
+/* CSS COMPLETO - WANDERLAND */
+/* ======================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +15,7 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
+
 /* ===== TOP BAR ===== */
 .top-bar {
     position: fixed;
@@ -155,7 +160,7 @@ header {
     display: none;
 }
 
-/* MENU MOBILE - ESCONDIDO */
+/* MENU MOBILE */
 .mobile-menu {
     display: none;
     overflow: hidden;
@@ -214,6 +219,11 @@ header {
     font-size: 12px;
     font-weight: 600;
     cursor: pointer;
+    transition: background 0.3s;
+}
+
+.read-more-btn:hover {
+    background: #1a3e16;
 }
 
 /* ===== TRAVEL ESSENTIALS ===== */
@@ -289,9 +299,84 @@ header {
     transform: translateX(10px);
 }
 
+/* ===== FEATURED BLOG POSTS (3 CARDS) ===== */
+.featured-blog {
+    padding: 80px 40px;
+}
+
+.blog-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 280px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-meta {
+    font-size: 12px;
+    color: #888;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.card-content h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.read-more-card {
+    background: transparent;
+    border: 1px solid #2c3e2b;
+    color: #2c3e2b;
+    padding: 8px 20px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.read-more-card:hover {
+    background: #2c3e2b;
+    color: white;
+}
+
 /* ===== NEWSLETTER ===== */
 .newsletter {
-    background: #f0f3ee;
     padding: 100px 40px;
     text-align: center;
 }
@@ -340,6 +425,18 @@ header {
     font-size: 12px;
     font-weight: 600;
     cursor: pointer;
+    transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+    background: #1a3e16;
+}
+
+.newsletter-note {
+    display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
 }
 
 /* ===== DIGITAL RESORT ===== */
@@ -418,6 +515,11 @@ footer {
     text-decoration: none;
     font-size: 12px;
     color: #aaa;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: white;
 }
 
 .footer-social {
@@ -432,38 +534,31 @@ footer {
     font-size: 12px;
 }
 
-/* ===== RESPONSIVIDADE - SÓ ATÉ 600px ===== */
+/* ===== RESPONSIVIDADE (ATÉ 600px) ===== */
 @media (max-width: 600px) {
-
     .top-contacts {
         display: none;
     }
 
-    /* Esconde menu desktop */
     .main-nav {
         display: none;
     }
 
-    /* Mostra ícone do menu */
     #menu-toggle {
         display: block;
     }
 
-    /* Esconde o botão BUYNOW no mobile */
     .buy-btn {
         display: none;
     }
 
-    /* Ajusta o input de busca */
     .search-icon input {
         width: 100px;
     }
 
-    /* MENU MOBILE - aparece ao clicar */
     .mobile-menu {
         display: none;
         position: absolute;
-        overflow: hidden;
         top: 60px;
         right: 15px;
         background: rgba(0, 0, 0, 0.95);
@@ -483,18 +578,18 @@ footer {
         background: rgba(255, 255, 255, 0.1);
         border-radius: 5px;
         display: block;
+        transition: background 0.3s;
     }
 
     .mobile-menu a:hover {
-        background: red;
-        color: #1a1a1a;
+        background: #255820;
+        color: white;
     }
 
     .mobile-menu.active {
         display: flex;
     }
 
-    /* Ajustes gerais */
     .hero h1 {
         font-size: 32px;
     }
@@ -526,4 +621,14 @@ footer {
         width: 100%;
         max-width: 300px;
     }
+
+    .blog-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 350px;
+    }
 }
+
