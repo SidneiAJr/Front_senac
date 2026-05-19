@@ -357,6 +357,11 @@ header {
     margin-bottom: 12px;
 }
 
+h4:hover{
+    text-decoration: underline;
+    font-size: 25px;
+}
+
 .card-content p {
     font-size: 14px;
     color: #666;
