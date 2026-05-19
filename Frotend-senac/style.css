@@ -6,10 +6,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
     background-image: url("https://images.unsplash.com/photo-1590258335103-0664be2e92bd?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YWVzdGhldGljJTIwZm9yZXN0fGVufDB8fDB8fHww");
     background-size: cover;
     background-attachment: fixed;
@@ -22,7 +22,6 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
     padding: 10px 40px;
     z-index: 1001;
 }
@@ -78,10 +77,11 @@ header {
     top: 42px;
     left: 0;
     width: 100%;
-    background: rgba(182, 157, 157, 0.27);
-    backdrop-filter: blur(6px);
     padding: 15px 40px;
     z-index: 1000;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-top: 10px;
 }
 
 .header-container {
@@ -106,7 +106,14 @@ header {
 
 .main-nav {
     display: flex;
+    align-items: center;
     gap: 25px;
+}
+
+.main-nav img{
+    width: 90px;
+    height: 90px;
+    margin: 0 20px;
 }
 
 .main-nav a {
@@ -126,6 +133,8 @@ header {
 
 .main-nav a:hover {
     color: #ffd700;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .header-actions {
@@ -631,4 +640,3 @@ footer {
         max-width: 350px;
     }
 }
-
