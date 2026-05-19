@@ -1,0 +1,14 @@
+/* ===== BASE ===== */
+@import url('./reset.css');
+@import url('./variables.css');
+
+/* ===== LAYOUTS ===== */
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./footer.css');
+
+/* ===== PAGES ===== */
+@import url('./home.css');
+
+/* ===== RESPONSIVE ===== */
+@import url('./responsive.css');
