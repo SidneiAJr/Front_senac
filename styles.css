@@ -131,6 +131,13 @@ h3{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+.sobre-caixa:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .sobre-paragrafo{
     text-align: center;
     font-size: 1.2rem;
@@ -218,23 +225,31 @@ h3{
     object-fit: cover;
 }
 
-#b{
+#b {
     text-decoration: none;
-    background-color: white;
-    border-radius: 12px;
-    font-size: 20px;
-    color: #0f172a;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
     text-align: center;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 10px 24px;
     display: inline-block;
-}
-
-#b:hover{
+    transition: all 0.3s ease;
     cursor: pointer;
-    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+#b:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.4);
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+}
+
+#b:active {
+    transform: translateY(2px);
+}
 .ling-type{
     display: flex;
     justify-content: center;
@@ -253,4 +268,16 @@ h6{
     text-align: center;
     justify-content: center;
     margin: 30px;
+}
+
+.destaque{
+    font-size: 30px;
+    color: white;
+}
+.Estruturas{
+    font-size: 30px;
+    color: white;
+}
+h3{
+    font-size: 20px;
 }
