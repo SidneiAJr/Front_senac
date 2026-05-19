@@ -1,0 +1,34 @@
+function calcular() {
+    let moeda1 = parseInt(document.getElementById("moeda1").value)
+    let moeda050 = parseFloat(document.getElementById("moeda050").value)
+    let moeda025 = parseFloat(document.getElementById("moeda025").value)
+    let moeda010 = parseFloat(document.getElementById("moeda010").value)
+    let moeda005 = parseFloat(document.getElementById("moeda005").value)
+
+    if(!isNaN(moeda1)&&!isNaN(moeda050)&&!isNaN(moeda025)&&!isNaN(moeda010)&&!isNaN(moeda005)){
+    const valormoeda1 = 1
+    const valormoeda050 = 0.50
+    const valormoeda025 = 0.25
+    const valormoeda010 = 0.10
+    const valormoeda005 = 0.05
+    const contamoeda1 = moeda1*valormoeda1
+    const contamoeda2 = moeda050*valormoeda050
+    const contamoeda3 = moeda025*valormoeda025
+    const contamoeda4 = moeda010*valormoeda010
+    const contamoeda5 = moeda005*valormoeda005
+    const total = contamoeda1+contamoeda2+contamoeda3+contamoeda4+contamoeda5
+    document.getElementById("res").innerHTML = `
+    Valor Total R$ ${total.toFixed(2)}<br>
+    Moedas de R$ 1.00 Valor R$: ${contamoeda1.toFixed(2)}<br>
+    Moedas de R$ 0.50 Valor R$:${contamoeda2.toFixed(2)}<br>
+    Moedas de R$ 0.25 Valor R$:${contamoeda3.toFixed(2)}<br>
+    Moedas de R$ 0.10 Valor R$: ${contamoeda4.toFixed(2)}<br>
+    Moedas de R$ 0.05 Valor R$:${contamoeda5.toFixed(2)}<br>
+    `
+    }else{
+        document.getElementById("res").innerHTML =`Favor Informar o Numero correto!!`
+    }
+    
+    
+    
+}
