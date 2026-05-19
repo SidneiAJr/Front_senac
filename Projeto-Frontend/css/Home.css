@@ -1,0 +1,254 @@
+/* ===== TRAVEL ESSENTIALS ===== */
+.travel-essentials {
+    padding: 100px 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h3 {
+    font-size: 14px;
+    color: #7c9c6e;
+    letter-spacing: 2px;
+}
+
+.section-header h2 {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.tips-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.tip-card {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tip-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.tip-text {
+    flex: 1;
+    padding: 40px;
+}
+
+.tip-text h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.tip-text p {
+    font-size: 15px;
+    color: #666;
+}
+
+.tip-image {
+    flex: 1;
+}
+
+.tip-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.tip-image:hover img {
+    transform: translateX(10px);
+}
+
+/* ===== FEATURED BLOG POSTS (3 CARDS) ===== */
+.featured-blog {
+    padding: 80px 40px;
+}
+
+.blog-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 280px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-meta {
+    font-size: 12px;
+    color: #888;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.card-content h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+h4:hover{
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.read-more-card {
+    background: transparent;
+    border: 1px solid #2c3e2b;
+    color: #2c3e2b;
+    padding: 8px 20px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.read-more-card:hover {
+    background: #2c3e2b;
+    color: white;
+}
+
+/* ===== NEWSLETTER ===== */
+.newsletter {
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.newsletter-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.newsletter h3 {
+    font-size: 14px;
+    color: #7c9c6e;
+    letter-spacing: 2px;
+}
+
+.newsletter h2 {
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.newsletter p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.newsletter-form input {
+    width: 350px;
+    padding: 14px 20px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.newsletter-form button {
+    background: #2c3e2b;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+    background: #1a3e16;
+}
+
+.newsletter-note {
+    display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+}
+
+/* ===== DIGITAL RESORT ===== */
+.digital-resort {
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 100px 40px;
+    gap: 60px;
+}
+
+.resort-content {
+    flex: 1;
+}
+
+.resort-content h2 {
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.resort-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.resort-image {
+    flex: 1;
+}
+
+.resort-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+}
