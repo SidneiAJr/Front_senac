@@ -126,15 +126,11 @@ header {
     transition: color 0.3s;
 }
 
-.main-nav a:last-child {
-    border-right: none;
-    padding-right: 0;
-}
-
 .main-nav a:hover {
-    color: #ffd700;
+    color: green;
     font-size: 20px;
     font-weight: bold;
+    background-color: white;
 }
 
 .header-actions {
