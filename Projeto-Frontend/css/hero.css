@@ -69,3 +69,15 @@
     background-position: center bottom;
     background-size: cover;
 }
+
+.imagens-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.imagens-logo img:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
