@@ -93,7 +93,7 @@ header {
 }
 
 .main-nav img{
-    width: auto;
+    width: 100%;
     height: auto;
     margin: 0 20px;
 }
