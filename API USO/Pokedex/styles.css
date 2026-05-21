@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    background: linear-gradient(to left, #1a472a 0%, #2d5a2c 50%, #4a7c39 100%);
+}
+
+.Container {
+    padding: 100px;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+     margin: 0 auto; 
+    background: rgba(0, 0, 0, 0.33);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transform: 0.5s ease all;
+     max-width: 400px; 
+}
+
+.conteiner-texto:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: all;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+}
+
+input,
+button {
+    height: 50px;
+    width: 250px;
+    border: none;
+    margin: 5px;
+    outline: none;
+    font-weight: bold;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+button:hover {
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    background-color: red;
+}
+
+.saida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.33);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.saida img {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+@media (max-width: 480px) {
+    .Container {
+        padding: 10px;
+    }
+    
+    input, button {
+        width: 180px;
+        height: 35px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    .saida img {
+        height: 80px;
+        width: 80px;
+    }
+}
